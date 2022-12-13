@@ -30,7 +30,7 @@
 
 	"permissions": ["storage"],
 
-	"applications": {
+	"browser_specific_settings": {
 		"gecko": {
 			"id": "pronote-eclat-bfc_connector@alberic89"
 		}
