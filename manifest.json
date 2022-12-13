@@ -1,0 +1,38 @@
+{
+	"manifest_version": 2,
+
+	"name": "Pronote & Éclat-BFC connector",
+
+	"version": "1.0",
+
+	"description": "Se connecter rapidement à Pronote et Éclat-BFC. Enregistrez vos identifaints dans le gestionnaire de mot de passe de votre navigateur et activez le remplissage automatique. Seuls les comptes élève ou parent de collège et lycée sont supportés pour l'instant.",
+
+	"author": "alberic89",
+
+	"icons": {
+		"16": "icons/icon16.png",
+		"32": "icons/icon32.png",
+		"64": "icons/icon64.png",
+		"128": "icons/icon128.png"
+	},
+	
+	"content_scripts": [
+		{
+			"matches": ["*://cas.eclat-bfc.fr/login*","*://educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO*"],
+			"js": ["connexion.js"]
+		}
+	],
+	
+	"options_ui": {
+		"page": "option.html",
+		"browser_style": true
+	},
+
+	"permissions": ["storage"],
+
+	"applications": {
+		"gecko": {
+			"id": "pronote&eclat-bfc_connector@alberic89"
+		}
+	}
+}
