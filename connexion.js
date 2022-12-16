@@ -9,7 +9,6 @@ function onGot(item) {
 		choix = item.choix;
 	}
 	if (document.URL.includes("cas.eclat-bfc.fr/login")) {
-		document.URL.includes("educonnect.education.gouv.fr/idp/profile/SAML2/POST/SSO")
 		document.getElementsByClassName("btn btn--naked js-wayftoggle btn--lg btn--as-link btn--full")[0].click();
 		document.getElementById("idp-EDU").click();
 		document.getElementById("button-submit").click();
