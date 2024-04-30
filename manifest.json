@@ -15,7 +15,7 @@
 
     "content_scripts": [
         {
-            "matches": ["*://*.cas.eclat-bfc.fr/*","*://*.educonnect.education.gouv.fr/idp/profile/SAML2/POST/*"],
+            "matches": ["*://cas.eclat-bfc.fr/*","*://educonnect.education.gouv.fr/idp/profile/SAML2/POST/*"],
             "js": ["connexion.js"]
         }
     ]
